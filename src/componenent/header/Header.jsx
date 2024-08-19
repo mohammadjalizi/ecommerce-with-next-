@@ -2,6 +2,7 @@ import React from 'react'
 import './header.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCartShopping, faHouse, faRightToBracket, faUserPlus } from '@fortawesome/free-solid-svg-icons'
+import Link from 'next/link'
 const Header = () => {
   return (
     <header id="headerElement" className="flex">
@@ -19,8 +20,8 @@ const Header = () => {
       <p style={{letterSpacing: '0.5px'}}>Shopping</p>
     </div>
 
-    <div className="links">
-      <a style={{position: 'relative'}} className="cart" href="./pages/cart.html">
+    <nav className="Links">
+      <Link style={{position: 'relative'}} className="cart" href="/cart">
       <FontAwesomeIcon   
       
     style={{
@@ -33,8 +34,8 @@ const Header = () => {
     icon={faCartShopping} />
         $0.00
         <span className="products-number">2</span>
-      </a>
-      <a className="sign-in" href="./pages/signin.html">
+      </Link>
+      <Link className="sign-in" href="/signin">
       <FontAwesomeIcon   
       
       style={{
@@ -45,9 +46,9 @@ const Header = () => {
   
       }
       icon={faRightToBracket} />
-        Sign in</a
-      >
-      <a className="register" href="./pages/register.html">
+        Sign in</Link>
+    
+      <a className="register" href="/register">
       <FontAwesomeIcon   
       
       style={{
@@ -60,7 +61,7 @@ const Header = () => {
       icon={faUserPlus} />
         Register</a
       >
-    </div>
+    </nav>
   </header>
   )
 }
