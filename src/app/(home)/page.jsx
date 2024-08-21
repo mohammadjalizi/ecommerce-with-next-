@@ -2,8 +2,7 @@ import Footer from "../../componenent/footer/Footer";
 import Header from "../../componenent/header/Header";
 import Image from "next/image";
 import './home.css'
-import Products from "./products";
-
+import Products from "./Products";
 
 
 
