@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import React from 'react'
 
 // const arr = [
@@ -46,9 +47,9 @@ return(
   <>
   
   <article title={item.title} key={item.id} className="card">
-          <a href="/pages/product-details.html">
+          <Link href= {`/product-details/${item.id}`}>
             <img width="266" src={item.productImg} alt="" srcSet="" />
-          </a>
+          </Link>
 
           <div style={{width: '266px'}} className="content">
             <h1 className="title">{item.title.slice(0,20)}...</h1>
