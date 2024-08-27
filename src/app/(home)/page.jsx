@@ -3,6 +3,8 @@ import Header from "../../componenent/header/Header";
 import Image from "next/image";
 import './home.css'
 import Products from "./Products";
+import { Suspense } from "react";
+import Loading from "./loading";
 
 
 
@@ -27,7 +29,11 @@ export default function Home() {
         <i className="fa-solid fa-check"></i>
         Recommended for you
       </h1>
+<Suspense fallback={ <Loading/> } >
+
+
 <Products/>
+</Suspense>
 
     </main>
 

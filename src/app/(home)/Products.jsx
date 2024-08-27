@@ -17,6 +17,9 @@ import React from 'react'
 
 
    async function getdata() {
+
+    await new Promise(resolve => setTimeout(resolve, 3000))
+
     const res = await fetch('http://localhost:4000/products',
 
 
@@ -44,7 +47,7 @@ return(
   
   <article title={item.title} key={item.id} className="card">
           <a href="/pages/product-details.html">
-            {/* <img width="266" src={item.image} alt="" srcSet="" /> */}
+            <img width="266" src={item.productImg} alt="" srcSet="" />
           </a>
 
           <div style={{width: '266px'}} className="content">
