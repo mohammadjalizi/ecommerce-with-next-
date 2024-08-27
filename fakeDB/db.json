@@ -1,0 +1,27 @@
+{
+    "products": [
+      {
+        "id": "1",
+        "productImg": "./images/1.png",
+        "title": "Black Short",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate eveniet eos rem molestiae repellendus, ducimus distinctio      perspiciatis veniam, neque iure illo eligendi. Lorem ipsum dolor sit      amet, consectetur adipisicing elit Suscipit consectetur.",
+        "price": 8000
+      },
+      {
+        "id": "2",
+        "productImg": "./images/2.webp",
+        "title": "Men Travel Bag",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate eveniet eos rem molestiae repellendus, ducimus distinctio      perspiciatis veniam, neque iure illo eligendi. Lorem ipsum dolor sit      amet, consectetur adipisicing elit Suscipit consectetur.",
+        "price": 9000
+      },
+      {
+        "id": "3",
+        "productImg": "./images/3.webp",
+        "title": "Sport Backpack",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate eveniet eos rem molestiae repellendus, ducimus distinctio      perspiciatis veniam, neque iure illo eligendi. Lorem ipsum dolor sit      amet, consectetur adipisicing elit Suscipit consectetur.",
+        "price": 50
+      }
+
+     
+    ]
+  }

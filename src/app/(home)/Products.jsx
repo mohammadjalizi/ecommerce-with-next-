@@ -15,8 +15,13 @@ import React from 'react'
 
 //   ];
 
+
    async function getdata() {
-    const res = await fetch('https://fakestoreapi.com/products')
+    const res = await fetch('http://localhost:4000/products',
+
+
+      { next: { revalidate: 0 } }
+    )
 
     
    
@@ -27,6 +32,7 @@ import React from 'react'
 const Products =  async  () => {
 const data=await getdata()
 console.log(data)
+
   
   return (
     <div>
@@ -36,7 +42,7 @@ console.log(data)
 return(
   <>
   
-  <article title={item.title} key={item.productImg} className="card">
+  <article title={item.title} key={item.id} className="card">
           <a href="/pages/product-details.html">
             {/* <img width="266" src={item.image} alt="" srcSet="" /> */}
           </a>
