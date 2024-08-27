@@ -6,7 +6,7 @@ import Link from 'next/link'
 const Header = () => {
   return (
     <header id="headerElement" className="flex">
-    <div className="logo">
+    <Link href={"/"} className="logo">
     <FontAwesomeIcon  
     style={{
 
@@ -18,7 +18,8 @@ const Header = () => {
     icon={faHouse} />
       <span style={{fontWeight: 'bold'}}>AWU</span>
       <p style={{letterSpacing: '0.5px'}}>Shopping</p>
-    </div>
+    </Link>
+
 
     <nav className="Links">
       <Link style={{position: 'relative'}} className="cart" href="/cart">

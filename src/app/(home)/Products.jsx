@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import { notFound } from 'next/navigation'
 import React from 'react'
 
 // const arr = [
@@ -27,7 +28,10 @@ import React from 'react'
       { next: { revalidate: 0 } }
     )
 
-    
+    if(!res){
+
+      notFound()
+    }
    
     return res.json()
   }
