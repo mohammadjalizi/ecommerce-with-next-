@@ -3,7 +3,7 @@ import './header.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCartShopping, faHouse, faRightToBracket, faUserPlus } from '@fortawesome/free-solid-svg-icons'
 import Link from 'next/link'
-const Header = () => {
+const Header = ({issigninpage=false,isragestirpage=false}) => {
   return (
     <header id="headerElement" className="flex">
     <Link href={"/"} className="logo">
@@ -36,7 +36,7 @@ const Header = () => {
         $0.00
         <span className="products-number">2</span>
       </Link>
-      <Link className="sign-in" href="/signin">
+      <Link className={`sign-in ${issigninpage? "border":null  } `} href="/signin">
       <FontAwesomeIcon   
       
       style={{
@@ -49,7 +49,7 @@ const Header = () => {
       icon={faRightToBracket} />
         Sign in</Link>
     
-      <a className="register" href="/register">
+      <Link className={`sign-in ${isragestirpage? "border":null  } `} href="/register">
       <FontAwesomeIcon   
       
       style={{
@@ -60,8 +60,9 @@ const Header = () => {
   
       }
       icon={faUserPlus} />
-        Register</a
-      >
+        Register
+        </Link>
+ 
     </nav>
   </header>
   )

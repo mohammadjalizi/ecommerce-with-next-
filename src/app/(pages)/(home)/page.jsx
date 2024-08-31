@@ -1,5 +1,5 @@
-import Footer from "../../componenent/footer/Footer";
-import Header from "../../componenent/header/Header";
+import Footer from "../../../componenent/footer/Footer";
+import Header from "../../../componenent/header/Header";
 import Image from "next/image";
 import './home.css'
 import Products from "./Products";
@@ -32,7 +32,9 @@ export default function Home() {
 <Suspense fallback={ <Loading/> } >
 
 
-<Products/>
+<
+// @ts-ignore
+Products/>
 </Suspense>
 
     </main>
